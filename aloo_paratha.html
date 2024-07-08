@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani</title>
+</head>
+<style>
+    html,body{
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        background-color: cornsilk;
+        box-sizing: border-box;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr ;
+        grid-gap: 1px;
+        /* justify-content: center; */
+        border: 2px solid grey;
+        border-radius: 10px;
+        padding: 30px 30px 0 30px;
+        min-width: 41.5%;
+        height: 650px;
+        position: absolute;
+        left: 27%;
+        background-color: azure;
+
+    }
+    .item{
+        width: 620px;
+        height: 620px;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 160px 450px;
+        /* overflow: hidden; */
+        transition: all 1.3s ease;
+        /* padding: 8px 0 0 8px; */
+        font-size: large;
+        text-align: left;
+        
+    }
+    img{
+        height: 140px;
+        width: 140px;
+        transition: all 0.3s ease;
+        border-radius: 3px;
+    }
+    header{
+        width: 100%;
+        height: 50px;
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+    }
+    /*p{
+        font-size: 120%;
+        font-weight: 550;
+        height: 30px;
+        padding-left: 15px;
+        position: relative;
+        top: -225px;
+        margin: 0;
+    } */
+    .name{
+        font-size: 120%;
+        font-weight: 550;
+        height: 30px;
+        padding-left: 15px;
+        position: absolute;
+        top: 180px; /* Adjust this top position to fit your layout */
+        left: 30px; /* Adjust this left position to fit your layout */
+        right: 18px; /* Ensure it stretches to the right edge */
+        bottom: 0; /* Ensure it stretches to the bottom edge */
+        margin: 0;
+    }
+    .recipe{
+        /* font-size: 120%; */
+        /* font-weight: 550; */
+        height: 30px;
+        font-family: cursive;
+        padding-left: 15px;
+        position: absolute;
+        top: 220px; /* Adjust this top position to fit your layout */
+        left: 30px; /* Adjust this left position to fit your layout */
+        right: 33px; /* Ensure it stretches to the right edge */
+        bottom: 0; /* Ensure it stretches to the bottom edge */
+        margin: 0;
+        line-height: 1.6;
+    }
+    .text{
+        padding-top: 13px;
+        height: 150px;
+        font-family: cursive;
+        position: relative;
+    }
+    button{
+        position: absolute;
+        left: 66%;
+        bottom: -440px;
+        border-radius: 5px;
+        height: 2.1em;
+        font-size: 0.95rem;
+        cursor: pointer;
+        /* transition: all 0.3s ease; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #D16B86;
+        color: #08251e;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        transform-style: preserve-3d;
+    }
+    button:hover{
+        /* transform: scale(1.07); */
+        background-color: #D16B86;
+        color: #fff;
+    }
+</style>
+<body>
+    <header>Digital Recipe Book</header>
+    <div class="container">
+        <div class="item">
+            <img src="./photos/aloo_paratha.jpg" alt="Aloo paratha"><div class="text">A stuffed flatbread made with whole wheat flour and filled with a seasoned potato mixture. Typically served with yogurt or pickle, it's a popular breakfast or brunch item. <br><a href="index.html"><button>Back to menu</button></a></div>
+            <p class="name">Aloo paratha <br><br></p><p class="recipe">Recipe: <br>1. Prepare Filling: Boil and mash 2-3 potatoes. <br>2. Add finely chopped onions, green chilies, coriander, cumin seeds, salt, and garam masala. Mix well. <br>
+                3. Make Dough: Knead whole wheat flour with water and a pinch of salt to make a soft dough. Let it rest for 15-20 minutes. <br>
+                4. Stuff Paratha: Take a small portion of dough, roll it out, place the potato filling in the center, and seal the edges. <br>
+                5. Roll Paratha: Gently roll the stuffed dough into a flat circle. <br>
+                6. Cook Paratha: Heat a tava (griddle), cook the paratha on both sides with some oil/ghee until golden brown. <br>
+                7. Serve: Serve hot with yogurt, pickle, or butter.</p>
+            
+        </div>
+    </div>
+</body>
+</html>

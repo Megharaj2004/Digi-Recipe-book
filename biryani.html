@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani</title>
+</head>
+<style>
+    html,body{
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        background-color: cornsilk;
+        box-sizing: border-box;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr ;
+        grid-gap: 1px;
+        /* justify-content: center; */
+        border: 2px solid grey;
+        border-radius: 10px;
+        padding: 30px 30px 0 30px;
+        min-width: 40%;
+        height: 650px;
+        position: absolute;
+        left: 27%;
+        background-color: azure;
+
+    }
+    .item{
+        width: 620px;
+        height: 620px;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 160px 450px;
+        /* overflow: hidden; */
+        transition: all 1.3s ease;
+        /* padding: 8px 0 0 8px; */
+        font-size: large;
+        text-align: left;
+        
+    }
+    img{
+        height: 140px;
+        width: 140px;
+        transition: all 0.3s ease;
+        border-radius: 3px;
+    }
+    header{
+        width: 100%;
+        height: 50px;
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+    }
+    /*p{
+        font-size: 120%;
+        font-weight: 550;
+        height: 30px;
+        padding-left: 15px;
+        position: relative;
+        top: -225px;
+        margin: 0;
+    } */
+    .name{
+        font-size: 120%;
+        font-weight: 550;
+        height: 30px;
+        padding-left: 15px;
+        position: absolute;
+        top: 180px; /* Adjust this top position to fit your layout */
+        left: 30px; /* Adjust this left position to fit your layout */
+        right: 18px; /* Ensure it stretches to the right edge */
+        bottom: 0; /* Ensure it stretches to the bottom edge */
+        margin: 0;
+    }
+    .recipe{
+        /* font-size: 120%; */
+        /* font-weight: 550; */
+        height: 30px;
+        font-family: cursive;
+        padding-left: 15px;
+        position: absolute;
+        top: 220px; /* Adjust this top position to fit your layout */
+        left: 30px; /* Adjust this left position to fit your layout */
+        right: 33px; /* Ensure it stretches to the right edge */
+        bottom: 0; /* Ensure it stretches to the bottom edge */
+        margin: 0;
+        line-height: 1.6;
+    }
+    .text{
+        padding-top: 13px;
+        height: 150px;
+        font-family: cursive;
+        position: relative;
+    }
+    button{
+        position: absolute;
+        left: 66%;
+        bottom: -440px;
+        border-radius: 5px;
+        height: 2.1em;
+        font-size: 0.95rem;
+        cursor: pointer;
+        /* transition: all 0.3s ease; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #D16B86;
+        color: #08251e;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        transform-style: preserve-3d;
+    }
+    button:hover{
+        /* transform: scale(1.07); */
+        background-color: #D16B86;
+        color: #fff;
+    }
+</style>
+<body>
+    <header>Digital Recipe Book</header>
+    <div class="container">
+        <div class="item">
+            <img src="./photos/biryani.jpg" alt="Biryani"><div class="text">A fragrant rice dish layered with aromatic spices, herbs, and either chicken, mutton, or vegetables. This one-pot dish is a staple of Indian cuisine, known for its complex flavors. <br><a href="index.html"><button>Back to menu</button></a></div>
+            <p class="name">Biryani <br><br></p><p class="recipe">Recipe: <br>1. Marinate Meat/Vegetables: Mix yogurt, ginger-garlic paste, spices, and marinate your choice of meat/vegetables for at least 1 hour. <br>
+                2. Cook Rice: Parboil basmati rice with whole spices (bay leaf, cloves, cardamom). <br>
+                3. Prepare Gravy: Sauté onions until golden, add tomatoes, and cook until soft. Add marinated meat/vegetables and cook until done. <br>
+                4. Layer Biryani: In a pot, layer half of the rice, followed by the gravy, and then the remaining rice. Sprinkle saffron milk, fried onions, and mint leaves. <br>
+                5. Dum Cooking: Seal the pot with dough or a tight lid and cook on low heat for 20-30 minutes. <br>
+                6. Serve: Fluff up the rice and serve hot with raita..</p>
+            
+        </div>
+    </div>
+</body>
+</html>
